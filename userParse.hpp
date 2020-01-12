@@ -7,16 +7,27 @@
 class userParse
 {
 private:
-    std::string fileName;
+    std::string inFileName;
+    std::string outFileName;
 public:
     userParse();
     ~userParse();
-    void setFileName(std::string fileName);
-    std::string getFileName();
+    
+    void setInFileName(std::string inFileName);
+    std::string getInFileName();
+    void setOutFileName(std::string inFileName);
+    std::string getOutFileName();
+
     char letterRoll();
     std::string generatePass();
+    void parsedFile();
 };
 
+struct userInfo
+{
+    std::string userName;
+    std::string userPass;
+};
 
 
 #endif
