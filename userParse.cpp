@@ -1,4 +1,7 @@
 #include "userParse.hpp"
+#include "userList.hpp"
+
+#include "hash.hpp"
 #include <iostream>
 #include <stdlib.h> 
 #include <stdio.h> 
@@ -116,6 +119,8 @@ void userParse::parsedFile(){
 
     userInfo temp; //temporary object used to refrence structs
 
+
+    
     for (size_t i = 0; i < userData.size(); i++)
     {
         temp = userData.at(i);
